@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="light" data-lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolyo Sitem</title>
+    <link rel="shortcut icon" href="./assets/image/briefcase.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container tamsayfa">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary mt-4 mx-4">
+            <div class="container-fluid navbargenel">
+              <div class="logo col-sm-6"> <!-- LOGO -->
+              <a class="navbar-brand" href="#"><img src="./assets/image/webdesign.png" alt="Bootstrap" width="40" height="40"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              </div> 
+              <!-- LİSTE -->
+              <div class="collapse navbar-collapse col-sm-6 navlist justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 me-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#hero" data-translate="home">Anasayfa</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#hakkimda" data-translate="about">Hakkımda</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#yetenekler" data-translate="skills">Yetenekler</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#portfolyo" data-translate="projects">Projeler</a>
+                    </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#iletisim" data-translate="contact">İletişim</a>
+                    </li>
+                  <li class="nav-item dropdown-center">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-translate="socialMedia">
+                      Sosyal Medya
+                    </a>
+                    <ul class="dropdown-menu sosyalmedya">
+                      <li><a target="_blank" class="dropdown-item" href="https://www.linkedin.com/in/ahmet-d-a11b8853/"><i class="fa-brands fa-linkedin"></i></a></li>
+                      <li><a target="_blank" class="dropdown-item" href="https://twitter.com/a__demiroglu"><i class="fa-brands fa-x-twitter"></i></a></li>
+                      <li><a target="_blank" class="dropdown-item" href="https://api.whatsapp.com/send?phone=905557137064"><i class="fa-brands fa-whatsapp"></i></a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a target="_blank" class="dropdown-item" href="mailto:ahmetdemiroglu89@gmail.com/"><i class="fa-regular fa-envelope"></i></a></li>
+                    </ul>
+                  </li>
+                  <!-- Dil Seçici -->
+                  <li class="nav-item dropdown">
+                    <button class="btn btn-link nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fas fa-globe"></i> TR
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="#" onclick="changeLanguage('tr')">
+                          <img src="https://flagcdn.com/16x12/tr.png" alt="TR" class="flag-icon"> Türkçe
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#" onclick="changeLanguage('en')">
+                          <img src="https://flagcdn.com/16x12/gb.png" alt="EN" class="flag-icon"> English
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+
+        <!-- HERO -->
+        <div id="hero" class="row flex-lg-row-reverse align-items-center g-5 py-5 mx-4">
+            <div class="col-10 col-sm-8 col-lg-6">
+              <img src="./assets/image/ahmetfoto-tiny.png" class="d-block mx-lg-auto img-fluid pt-2" alt="Ahmet Profil Fotoğrafı" loading="lazy">
+            </div>
+            <div class="col-lg-6 isimsoyisim">
+              <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3"><span class="ben">Ben,</span> Ahmet Demiroğlu</h1>
+              <p class="lead" data-translate="heroSubtitle"></p>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <a href="#iletisim"><button type="button" class="btn btn-outline-secondary btn-lg px-4 iletisimbutonu" data-translate="contactButton">İletişime Geçin</button></a>
+              </div>
+            </div>
+          </div>
+
+          <div id="parallax">
+            <h2 id="portfolyom" data-translate="aboutMe">Hakkımda</h2>
+            <img src="./assets/image/5c81317bb78f130f5aaa4789_pen-1-1@3x.png" alt="" id="pLeft" />
+            <img src="./assets/image/5c8057df4f71c1e19f5e15a6_pen-1-2@3x.png" alt="" id="pRight" />
+
+          </div>
+
+
+          <!-- About Me -->
+          <div id="hakkimda">
+            <div class="img ahmet2">
+              <img src="./assets/image/ben2.png" alt="Ahmet Foto-2" height="370px">
+            </div>
+            <div class="hakkimdaParagraf">
+              <p></p>
+              <button class="read-more-btn" data-translate="readMore">Devamını Gör</button>
+            </div>   
+          </div>
+
+          <!-- Yetenekler -->
+          <div id="yetenekler">
+            <div class="baslik">
+              <h2 data-translate="skills">Yetenekler</h2>
+            </div>
+            
+            <!-- Teknik Beceriler -->
+            <div class="skill-section" data-aos="fade-right">
+              <h3 data-translate="technicalSkills">Teknik Beceriler</h3>
+              
+              <!-- Front-End -->
+              <div class="skill-category">
+                <h4 data-translate="frontEnd">Front-End</h4>
+                <div class="skill-items-container">
+                  <div class="skill-item" data-aos="fade-right">
+                    <div class="skill-info">
+                      <i class="fab fa-html5"></i>
+                      <span>HTML5</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 100%"></div>
+                    </div>
+                    <small></small>
+                  </div>
+
+                  <div class="skill-item" data-aos="fade-right">
+                    <div class="skill-info">
+                      <i class="fab fa-css3-alt"></i>
+                      <span>CSS</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 80%"></div>
+                    </div>
+                    <small></small>
+                  </div>
+
+                  <div class="skill-item" data-aos="fade-right">
+                    <div class="skill-info">
+                      <i class="fab fa-js"></i>
+                      <span>JavaScript</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 80%"></div>
+                    </div>
+                    <small></small>
+                  </div>
+
+                  <div class="skill-item" data-aos="fade-right">
+                    <div class="skill-info">
+                      <i class="fab fa-vuejs"></i>
+                      <span>Vue.js</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 60%"></div>
+                    </div>
+                    <small></small>
+                  </div>
+
+                  <div class="skill-item" data-aos="fade-right">
+                    <div class="skill-info">
+                      <i class="fab fa-react"></i>
+                      <span>React.js</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 40%"></div>
+                    </div>
+                    <small></small>
+                  </div>
+
+                  <div class="skill-item" data-aos="fade-right">
+                    <div class="skill-info">
+                      <img src="./assets/image/icons8-jquery-is-a-javascript-library-designed-to-simplify-html-96.png" alt="jQuery" class="skill-icon">
+                      <span>jQuery</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 40%"></div>
+                    </div>
+                    <small></small>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Back-End -->
+              <div class="skill-category">
+                <h4 data-translate="backEnd">Back-End</h4>
+                <div class="skill-items-container">
+                  <div class="skill-item" data-aos="fade-right">
+                    <div class="skill-info">
+                      <img src="./assets/image/c--4.svg" alt="C#" class="skill-icon">
+                      <span>C#</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 60%"></div>
+                    </div>
+                    <small></small>
+                  </div>
+
+                  <div class="skill-item" data-aos="fade-right">
+                    <div class="skill-info">
+                      <img src="./assets/image/icons8-.net-framework-96.png" alt=".NET Core" class="skill-icon">
+                      <span>.NET Core</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 60%"></div>
+                    </div>
+                    <small></small>
+                  </div>
+
+                  <div class="skill-item" data-aos="fade-right">
+                    <div class="skill-info">
+                      <img src="./assets/image/eframe.png" alt="Entity Framework" class="skill-icon">
+                      <span>Entity Framework</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 40%"></div>
+                    </div>
+                    <small></small>
+                  </div>
+
+                  <div class="skill-item" data-aos="fade-right">
+                    <div class="skill-info">
+                      <img src="./assets/image/icons8-microsoft-sql-server-144.png" alt="SQL Server" class="skill-icon">
+                      <span>SQL Server Management Studio</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 80%"></div>
+                    </div>
+                    <small></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Diğer Beceriler -->
+            <div class="skill-section" data-aos="fade-right">
+              <h3 data-translate="otherSkills">Diğer Beceriler</h3>
+              <div class="skill-category">
+                <div class="skill-items-container">
+                  <div class="skill-item" data-aos="fade-right">
+                    <div class="skill-info">
+                      <i class="fab fa-github"></i>
+                      <span>GitHub</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 60%"></div>
+                    </div>
+                    <small></small>
+                  </div>
+
+                  <div class="skill-item" data-aos="fade-right">
+                    <div class="skill-info">
+                      <img src="./assets/image/Adobe_Photoshop_CC_icon.svg" alt="Photoshop" class="skill-icon">
+                      <span>Photoshop</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 80%"></div>
+                    </div>
+                    <small></small>
+                  </div>
+
+                  <div class="skill-item" data-aos="fade-right">
+                    <div class="skill-info">
+                      <i class="fas fa-drafting-compass"></i>
+                      <span>AutoCAD</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 60%"></div>
+                    </div>
+                    <small></small>
+                  </div>
+
+                  <div class="skill-item" data-aos="fade-right">
+                    <div class="skill-info">
+                      <img src="./assets/image/netcad.jpeg" alt="Netcad" class="skill-icon">
+                      <span>Netcad</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 40%"></div>
+                    </div>
+                    <small></small>
+                  </div>
+
+                  <div class="skill-item" data-aos="fade-right">
+                    <div class="skill-info">
+                      <i class="fas fa-globe"></i>
+                      <span>GIS (Coğrafi Bilgi Sistemleri)</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 40%"></div>
+                    </div>
+                    <small></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Yazılımsal Olmayan Beceriler -->
+            <div class="skill-section" data-aos="fade-right">
+              <h3 data-translate="nonTechnicalSkills">Yazılımsal Olmayan Beceriler</h3>
+              <div class="skill-category">
+                <div class="skill-items-container">
+                  <div class="skill-item" data-aos="fade-right">
+                    <div class="skill-info">
+                      <i class="fas fa-building"></i>
+                      <span>Gayrimenkul Değerleme</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 100%"></div>
+                    </div>
+                    <small></small>
+                  </div>
+
+                  <div class="skill-item" data-aos="fade-right">
+                    <div class="skill-info">
+                      <i class="fas fa-chart-line"></i>
+                      <span>Raporlama ve Analiz</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 100%"></div>
+                    </div>
+                    <small></small>
+                  </div>
+
+                  <div class="skill-item" data-aos="fade-right">
+                    <div class="skill-info">
+                      <i class="fas fa-puzzle-piece"></i>
+                      <span>Problem Çözme</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 100%"></div>
+                    </div>
+                    <small></small>
+                  </div>
+
+                  <div class="skill-item" data-aos="fade-right">
+                    <div class="skill-info">
+                      <i class="fas fa-users"></i>
+                      <span>Takım Çalışması ve İletişim</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 100%"></div>
+                    </div>
+                    <small></small>
+                  </div>
+
+                  <div class="skill-item" data-aos="fade-right">
+                    <div class="skill-info">
+                      <i class="fas fa-clock"></i>
+                      <span>Zaman Yönetimi ve Organizasyon</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 100%"></div>
+                    </div>
+                    <small></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+<!-- 1.SATIR -->
+          <section id="portfolyo" class="section">
+            <div class="container">
+              <div class="baslik">
+                <h2 class="leadp" data-translate="projectsTitle">Projeler</h2>
+              </div>
+
+              <!-- Projeler Container -->
+              <div class="projects-wrapper">
+                <!-- Rent A Car Project -->
+                <div class="project-row" data-aos="fade-up">
+                  <div class="project-image">
+                    <a href="https://github.com/AhmetDemiroglu/rota-rent-a-car" target="_blank">
+                      <img src="./assets/image/Rent A Car Svg.svg" alt="Rent A Car Project">
+                    </a>
+                  </div>
+                  <div class="project-info">
+                    <h3 data-translate="rentACarTitle"></h3>
+                    <p data-translate="rentACarDesc"></p>
+                    <div class="project-buttons">
+                      <a href="https://github.com/AhmetDemiroglu/rota-rent-a-car" target="_blank">
+                        <button type="button" class="btn btn-github">
+                          <i class="fab fa-github"></i> <span data-translate="viewGithub"></span>
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Notebook Project -->
+                <div class="project-row" data-aos="fade-up">
+                  <div class="project-image">
+                    <a href="https://interactive-notebook-4b92a.web.app/folder/-OHERE6EyPnNkjYdwwwk" target="_blank">
+                      <img src="./assets/image/Not Defteri svg.svg" alt="Notebook Project">
+                    </a>
+                  </div>
+                  <div class="project-info">
+                    <h3 data-translate="notebookTitle"></h3>
+                    <p data-translate="notebookDesc"></p>
+                    <div class="project-buttons">
+                      <a href="https://interactive-notebook-4b92a.web.app/folder/-OHERE6EyPnNkjYdwwwk" target="_blank">
+                        <button type="button" class="btn btn-view">
+                          <i class="fas fa-eye"></i> <span data-translate="viewLive"></span>
+                        </button>
+                      </a>
+                      <a href="https://github.com/AhmetDemiroglu/interactive-notebook" target="_blank">
+                        <button type="button" class="btn btn-github">
+                          <i class="fab fa-github"></i> <span data-translate="viewGithub"></span>
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Simon Game Project -->
+                <div class="project-row" data-aos="fade-up">
+                  <div class="project-image">
+                    <a href="https://ahmetdemiroglu.github.io/Simon/" target="_blank">
+                      <img src="./assets/image/responsive simon gif.gif" alt="Simon Game Project">
+                    </a>
+                  </div>
+                  <div class="project-info">
+                    <h3 data-translate="simonTitle"></h3>
+                    <p data-translate="simonDesc"></p>
+                    <div class="project-buttons">
+                      <a href="https://ahmetdemiroglu.github.io/Simon/" target="_blank">
+                        <button type="button" class="btn btn-view">
+                          <i class="fas fa-eye"></i> <span data-translate="viewLive"></span>
+                        </button>
+                      </a>
+                      <a href="https://github.com/AhmetDemiroglu/Simon" target="_blank">
+                        <button type="button" class="btn btn-github">
+                          <i class="fab fa-github"></i> <span data-translate="viewGithub"></span>
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Atak Calculator Project -->
+                <div class="project-row" data-aos="fade-up">
+                  <div class="project-image">
+                    <a href="https://ahmetdemiroglu.github.io/atakhesaplama/" target="_blank">
+                      <img src="./assets/image/responsive atak gif.gif" alt="Atak Calculator Project">
+                    </a>
+                  </div>
+                  <div class="project-info">
+                    <h3 data-translate="atakTitle"></h3>
+                    <p data-translate="atakDesc"></p>
+                    <div class="project-buttons">
+                      <a href="https://ahmetdemiroglu.github.io/atakhesaplama/" target="_blank">
+                        <button type="button" class="btn btn-view">
+                          <i class="fas fa-eye"></i> <span data-translate="viewLive"></span>
+                        </button>
+                      </a>
+                      <a href="https://github.com/AhmetDemiroglu/atakhesaplama" target="_blank">
+                        <button type="button" class="btn btn-github">
+                          <i class="fab fa-github"></i> <span data-translate="viewGithub"></span>
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- İletişim -->
+          <div id="iletisim">
+            <div class="baslik">
+              <h2 data-translate="contact">İletişim</h2>
+            </div>
+            <div class="merhaba">
+              <h2 data-translate="sayHello">Sadece Merhaba de,</h2>
+              <h5 data-translate="emailText">Bana <a class="linkmailto" target="_blank" href="mailto:ahmetdemiroglu89@gmail.com">ahmetdemiroglu89@gmail.com</a> üzerinden her zaman e-posta gönderebilirsin.</h5>
+            </div>
+
+            <div class="form">
+              <form id="mailformu" class="formgonder" action="https://formspree.io/f/mrgnzvej" method="post">
+                <legend class="mb-0" style="text-align: left; font-size: 1.8rem; font-weight: 500;" data-translate="orUseForm">Ya da aşağıdaki formu kullan.</legend>
+                <input type="text" class="kutu" id="name" name="firstname" data-translate-placeholder="namePlaceholder" placeholder="İsim Soyisim">
+                <input type="email" class="kutu" id="mail" name="lastname" data-translate-placeholder="emailPlaceholder" placeholder="E-posta">
+                <textarea id="subject" class="kutu text" name="subject" data-translate-placeholder="messagePlaceholder" placeholder="Bir şeyler yazın..."></textarea>
+                <input type="submit" role="button" data-translate-value="sendButton" value="Gönder" class="gonderbuton btn btn-outline-secondary btn-lg px-4 iletisimbutonu incelebuton" title="Formu gönderin.">
+                <div class="gonderbuton iletisimbutonu incelebuton btn" id="dinle" title="Konuşarak yazdırmayı başlatın."><i class="fa-solid fa-microphone"></i></div>
+                <div class="gonderbuton btn iletisimbutonu incelebuton" id="bitir"><i class="fa-solid fa-microphone-slash" title="Konuşarak yazdırmayı sonlandırın."></i></div>
+                <div class="gonderbuton btn iletisimbutonu incelebuton" id="oku" title="Yazılanı okutun."><i class="fa-solid fa-volume-low"></i></div>
+              </form>     
+            </div>
+          </div>
+
+        <!-- FOOTER -->
+        <div id="footer">
+          <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <p class="col-md-4 mb-0 text-body-secondary">© 2024 - Ahmet Demiroğlu</p>
+
+            <ul class="nav col-md-8 justify-content-end footer-links">
+              <li class="nav-item"><a href="#top" class="nav-link px-2 text-body-secondary" data-translate="home">Anasayfa</a></li>
+              <li class="nav-item"><a href="#hakkimda" class="nav-link px-2 text-body-secondary" data-translate="about">Hakkımda</a></li>
+              <li class="nav-item"><a href="#yetenekler" class="nav-link px-2 text-body-secondary" data-translate="skills">Yetenekler</a></li>
+              <li class="nav-item"><a href="#portfolyo" class="nav-link px-2 text-body-secondary" data-translate="projects">Projeler</a></li>
+              <li class="nav-item"><a target="_blank" class="nav-link px-2 text-body-secondary" href="https://api.whatsapp.com/send?phone=905557137064"><i class="fa-brands fa-whatsapp"></i></a></li>
+              <li class="nav-item"><a target="_blank" class="nav-link px-2 text-body-secondary" href="https://twitter.com/a__demiroglu"><i class="fa-brands fa-x-twitter"></i></a></li>
+              <li class="nav-item"><a target="_blank" class="nav-link px-2 text-body-secondary" href="mailto:ahmetdemiroglu89@gmail.com"><i class="fa-regular fa-envelope"></i></a></li>
+              <li class="nav-item"><a target="_blank" class="nav-link px-2 text-body-secondary" href="https://www.linkedin.com/in/ahmet-d-a11b8853/"><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+          </footer>
+        </div>
+
+    </div> 
+    
+<script src="./main.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init({
+  offset: 100,
+  duration: 800,
+  easing: 'ease-out',
+  delay: 100,
+  once: false,
+  mirror: true,
+  anchorPlacement: 'top-bottom'
+});
+</script>
+
+<!-- Body tag'inin hemen altına -->
+<div class="theme-switch-wrapper">
+  <label class="theme-switch" for="checkbox">
+    <input type="checkbox" id="checkbox" />
+    <div class="slider round">
+      <i class="fas fa-sun"></i>
+      <i class="fas fa-moon"></i>
+    </div>
+  </label>
+</div>
+
+<style>
+.skill-section {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.skill-category {
+  width: 100%;
+  margin-bottom: 2rem;
+  display: block;
+}
+
+.skill-category h4 {
+  width: 100%;
+  color: var(--text-color);
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px dashed var(--hover-color);
+  opacity: 0.9;
+  margin-top: 1rem;
+}
+
+.skill-items-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+@media screen and (max-width: 767px) {
+  .skill-items-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Ana başlıklar için stil */
+.skill-section h3 {
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  border-bottom: 3px solid var(--secondary-color);
+  padding-bottom: 0.5rem;
+}
+</style>
+
+</body>
+</html>
