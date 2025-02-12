@@ -50,11 +50,13 @@ Problem çözmeyi seven, yaratıcı, takım çalışmasına yatkın ve aynı zam
     projectsTitle: "Projeler",
     // Proje başlıkları
     rentACarTitle: "Rent A Car Full-Stack Web Sitesi",
+    expenseTrackerTitle: "Bütçe360° Harcama Takip Uygulaması",
     notebookTitle: "İnteraktif NotDefteri Uygulaması",
     simonTitle: "Simon Hafıza Oyunu",
     atakTitle: "Atak Dönemi Hesaplama Aracı",
     // Proje açıklamaları
     rentACarDesc: "Tam kapsamlı bir araç kiralama sitesi olarak tasarlanmış bu proje, hem front-end hem de back-end geliştirme becerilerini sergilemektedir. C#, ASP.NET Core, Entity Framework ve SQL Server kullanılarak geliştirilmiştir. Kullanıcılar araç kiralama işlemlerini gerçekleştirebilir, detaylı araç bilgilerine erişebilir. Bu proje Neos Yazılım Akademi staj sürecinde hazırlanmıştır.",
+    expenseTrackerDesc: "Bütçe360°, kredi kartı dönem takibi ve harcama yönetimi için tasarlanmış modern bir web uygulamasıdır. Kredi kartı hesap kesim tarihlerine göre özelleştirilebilen dönem bazlı takip sistemi sunar. Vue.js 3.0 ile geliştirilen uygulama, Firebase Realtime Database kullanarak güvenli veri depolama sağlar. Kullanıcı doğrulama sistemi ve e-posta doğrulaması ile güvenli erişim sunarken, her kullanıcının yalnızca kendi verilerine erişebilmesini garanti eder.",
     notebookDesc: "Bu proje, kullanıcılara dinamik bir not defteri deneyimi sunmak için tasarlanmıştır. Kullanıcılar notlarını ekleyebilir, düzenleyebilir ve silebilir. HTML, CSS ve Vue.js 3.0 kullanılarak geliştirilmiş olup interaktif bir kullanıcı deneyimi sağlamaktadır.",
     simonDesc: "Bu proje, JavaScript ve jQuery pratiği yapmak amacıyla geliştirilmiştir. Simon Hafıza Oyunu, kullanıcının ekrandaki renk sırasını takip ederek doğru şekilde tekrar etmesini amaçlayan eğlenceli ve etkileşimli bir oyundur. Oyun, temel web tasarım teknikleriyle desteklenmiştir.",
     atakDesc: "Bu uygulama, bebeklerin gelişim süreçlerindeki atak dönemlerini kolayca hesaplamada ebeveynlere yardımcı olmak amacıyla geliştirilmiştir. HTML, CSS, ve JavaScript kullanılarak oluşturulmuş basit, kullanımı kolay bir araçtır.",
@@ -133,11 +135,13 @@ I am someone who loves problem-solving, is creative, adept at teamwork, and also
     projectsTitle: "Projects",
     // Project titles
     rentACarTitle: "Rent A Car Full-Stack Website",
+    expenseTrackerTitle: "Budget360° Expense Tracking App",
     notebookTitle: "Interactive Notebook Application",
     simonTitle: "Simon Memory Game",
     atakTitle: "Growth Spurt Calculator",
     // Project descriptions
     rentACarDesc: "Designed as a comprehensive car rental website, this project showcases both front-end and back-end development skills. Developed using C#, ASP.NET Core, Entity Framework, and SQL Server, users can perform car rental operations and access detailed vehicle information. This project was completed during my internship at Neos Software Academy.",
+    expenseTrackerDesc: "Budget360° is a modern web application designed for credit card period tracking and expense management. It offers a period-based tracking system that can be customized according to credit card statement dates. Developed with Vue.js 3.0, the application provides secure data storage using Firebase Realtime Database. With user authentication and email verification, it ensures secure access while guaranteeing that each user can only access their own data.",
     notebookDesc: "This project is designed to provide users with a dynamic notebook experience. Users can add, edit, and delete their notes. Developed using HTML, CSS, and Vue.js 3.0, it provides an interactive user experience.",
     simonDesc: "This project was developed to practice JavaScript and jQuery. Simon Memory Game is a fun and interactive game that aims for users to correctly repeat the color sequence shown on the screen. The game is supported by basic web design techniques.",
     atakDesc: "This application is developed to help parents easily calculate their babies' growth spurt periods. It's a simple, easy-to-use tool created using HTML, CSS, and JavaScript.",
